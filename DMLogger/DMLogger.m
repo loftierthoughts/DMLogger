@@ -73,7 +73,7 @@ void _DMLog(DMLogLevel level, const char *file, int lineNumber, const char *func
 	NSString *fileName = [[NSString stringWithUTF8String:file] lastPathComponent];
 	
 	if (threadName) // Method is called on another thread, we would print it's name
-		fprintf(stderr,"%s%@[%s] %s/%s (%s:%d) %s",
+		fprintf(stderr,"%s%s[%s] %s/%s (%s:%d) %s",
 				nowCString,
 				(nowCString != nil ? " " : ""),
 				_DMLogLevelNames[level],
@@ -83,7 +83,7 @@ void _DMLog(DMLogLevel level, const char *file, int lineNumber, const char *func
 				lineNumber,
 				[body UTF8String]);
 	else // Method is called into the main thread
-		fprintf(stderr,"%s%@[%s] %p/%s (%s:%d) %s",
+		fprintf(stderr,"%s%s[%s] %p/%s (%s:%d) %s",
 				nowCString,
 				(nowCString != nil ? " " : ""),
 				_DMLogLevelNames[level],
