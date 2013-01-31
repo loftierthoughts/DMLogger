@@ -8,7 +8,7 @@ Licensed under [MIT License](http://opensource.org/licenses/MIT)
 
 ## Introduction
 
-DMLogger is replacement for standard OS X's NSLog() loggin method.
+DMLogger is replacement for standard OS X's NSLog() logging method.
 It was created to make a log debugging routine more simple, more informative and faster than it currently is with NSLog.
 
 It allows you to set a default level of logging (trace,debug,info,warning,error or fatal) and print out only interesting message based on your application development stage.
@@ -21,4 +21,4 @@ It can also override default NSLog message and stript it from application's rele
 If you found this project useful, please donate.
 There’s no expected amount and I don’t require you to.
 
-<a href='https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=GS3DBQ69ZBKWJ">CLICK THIS LINK TO DONATE USING PAYPAL</a>
+[CLICK THIS LINK TO DONATE USING PAYPAL](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=GS3DBQ69ZBKWJ)
